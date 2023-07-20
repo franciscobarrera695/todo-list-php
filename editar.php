@@ -1,6 +1,9 @@
 <?php
 include('./db.php');
 
+
+
+
 if(isset($_GET['id'])){
   $id = $_GET['id'];
   $sql = "SELECT * FROM tareas WHERE id=:id";
