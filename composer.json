@@ -1,0 +1,17 @@
+{
+    "name": "yayis/pruebas",
+    "autoload": {
+        "psr-4": {
+            "Yayis\\Pruebas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "francisco",
+            "email": "franciscobarrera968@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
