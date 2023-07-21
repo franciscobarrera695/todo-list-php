@@ -35,6 +35,7 @@
   <!--icon-->
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
   </head>
 
@@ -46,7 +47,7 @@
           <div class="card shadow animate__animated animate__bounceInDown">
             <div class="card-header">Tareas</div>
             <div class="card-body">
-              <form class="row g-3 needs-validation" novalidate action="" method="POST">
+              <form class="row g-3 needs-validation" id="formulario" novalidate action="" method="POST">
                 <div class="col-12 col-md-12 col-lg-4">
                   <label for="validationCustom01" class="form-label"
                     >Titulo</label
@@ -114,7 +115,7 @@
                 </div>
 
                 <div class="col-12">
-                  <button class="btn btn-primary" name="agregartarea" type="submit">Enviar</button>
+                  <button class="btn btn-primary" name="agregartarea" id="agregartarea" type="submit">Enviar</button>
                 </div>
               </form>
             </div>
@@ -139,6 +140,8 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
     <script src="public/js/validacion.js"></script>
   </body>
 </html>

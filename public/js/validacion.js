@@ -23,5 +23,18 @@
   })();
 
 
+  let formulario = document.getElementById('formulario');
 
-  
+  document.getElementById("agregartarea").addEventListener("click", function(e) {
+
+    e.preventDefault();
+    
+    Toastify({
+
+        text: "Se agrego nueva tarea!",
+        
+        duration: 3000
+        
+        }).showToast();
+        formulario.reset();
+  });
