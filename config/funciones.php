@@ -104,7 +104,12 @@ if(isset($_GET['id'])){
     $sql = 'DELETE FROM tareas WHERE id=:id';
     $query = $conexion->prepare($sql);
     $query->bindParam(':id',$id);
-    $query->execute();
+
+     if($query->execute()){
+                session_start();
+                $_SESSION['title'] = 'Tarea Eliminada!';
+                $_SESSION['icon'] = 'error';
+            }
 }
 
 if(!isset($_POST['filtrartareas'] )){
