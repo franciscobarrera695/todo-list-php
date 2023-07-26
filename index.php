@@ -44,7 +44,7 @@
     <a href="index.php" class="btn-flotante"><i class="bi bi-arrow-clockwise"></i></a>
       <div class="row justify-content-center align-items-center g-2">
         <div class="col-12 col-md-12 col-lg-6">
-          <?php if(isset($_SESSION['message'])) {?>
+          <?php if(isset($_SESSION['title'])) {?>
             <script>
               Swal.fire({
   position: 'center',
