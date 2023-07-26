@@ -35,8 +35,8 @@
   <!--icon-->
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
   </head>
 
   <body>
@@ -44,6 +44,21 @@
     <a href="index.php" class="btn-flotante"><i class="bi bi-arrow-clockwise"></i></a>
       <div class="row justify-content-center align-items-center g-2">
         <div class="col-12 col-md-12 col-lg-6">
+          <?php if(isset($_SESSION['message'])) {?>
+            <script>
+              Swal.fire({
+  position: 'center',
+  width:'32em',
+  icon: '<?php echo $_SESSION['icon'] ?>',
+  title: '<?php echo $_SESSION['title'] ?>',
+  showConfirmButton: false,
+  timer: 1500
+})
+              
+
+            </script>
+
+          <?php } ?>
           <div class="card shadow animate__animated animate__bounceInDown">
             <div class="card-header">Tareas</div>
             <div class="card-body">
@@ -140,8 +155,6 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-
     <script src="public/js/validacion.js"></script>
   </body>
 </html>

@@ -16,9 +16,14 @@ if(isset($_POST['agregartarea'])){
             $query->bindParam(':descripcion',$descripcion);
             $query->bindParam(':estado',$estado);
             $query->bindParam(':prioridad',$prioridad);
-            $query->execute(); 
-//print_r($query);
-}
+             
+            if($query->execute()){
+                session_start();
+                $_SESSION['title'] = 'Tarea Enviada!';
+                $_SESSION['icon'] = 'success';
+            }
+    }
+
 
 
 
