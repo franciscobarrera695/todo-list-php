@@ -47,22 +47,23 @@
           <?php if(isset($_SESSION['title'])) {?>
             <script>
               Swal.fire({
-  position: 'center',
-  width:'32em',
-  icon: '<?php echo $_SESSION['icon'] ?>',
-  title: '<?php echo $_SESSION['title'] ?>',
-  showConfirmButton: false,
-  timer: 1500
-})
-              
-
+               position: 'center',
+               width:'32em',
+               icon: '<?php echo $_SESSION['icon'] ?>',
+               title: '<?php echo $_SESSION['title'] ?>',
+              showConfirmButton: false,
+              timer: 1500
+              })
+              setTimeout(() => {
+                window.location.href= 'http://localhost/php/pruebas/index.php';
+              }, 1500);
             </script>
 
           <?php } ?>
           <div class="card shadow animate__animated animate__bounceInDown">
             <div class="card-header">Tareas</div>
             <div class="card-body">
-              <form class="row g-3 needs-validation" id="formulario" novalidate action="" method="POST">
+              <form class="row g-3 needs-validation" id="formulario" novalidate action="index.php" method="POST">
                 <div class="col-12 col-md-12 col-lg-4">
                   <label for="validationCustom01" class="form-label"
                     >Titulo</label
