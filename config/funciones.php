@@ -116,7 +116,7 @@ if(isset($_GET['id'])){
 
 if(!isset($_POST['filtrartareas'] )){
     # Cuántos productos mostrar por página
-$productosPorPagina = 3;
+$productosPorPagina = 6;
 $pagina = 1;
 if (isset($_GET["pagina"])) {
     $pagina = $_GET["pagina"];

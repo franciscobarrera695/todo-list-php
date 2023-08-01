@@ -43,7 +43,7 @@
     <div class="container my-3">
     <a href="index.php" class="btn-flotante"><i class="bi bi-arrow-clockwise"></i></a>
       <div class="row justify-content-center align-items-center g-2">
-        <div class="col-12 col-md-12 col-lg-6">
+        <div class="col-12 col-md-12 col-lg-8">
           <?php if(isset($_SESSION['title'])) {?>
             <script>
               Swal.fire({
@@ -57,7 +57,7 @@
             </script>
 
           <?php } ?>
-          <div class="card shadow animate__animated animate__bounceInDown">
+          <div class="card shadow animate__animated animate__pulse">
             <div class="card-header">Tareas</div>
             <div class="card-body">
               <form class="row g-3 needs-validation" id="formulario" novalidate action="index.php" method="POST">

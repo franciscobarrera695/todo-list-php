@@ -51,19 +51,23 @@ if(isset($_POST['editartarea'])){
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
   
     <div class="container">
         <div class="row justify-content-center align-items-center g-2">
-          <div class="col-6">
-            <div class="card">
+        <div class="col-12 col-md-12 col-lg-8">
+
+            <div class="my-3 card shadow animate__animated animate__pulse">
               <div class="card-header">Tareas</div>
               <div class="card-body">
                 <form class="row g-3 needs-validation" novalidate action="" method="POST">
-                  <div class="col-md-4">
+                  <div class="col-12 col-md-12 col-lg-4">
                     <label for="validationCustom01" class="form-label"
                       >Titulo</label
                     >
@@ -81,7 +85,8 @@ if(isset($_POST['editartarea'])){
                     </div>
                   </div>
   
-                  <div class="col-md-4">
+                  <div class="col-12 col-md-6 col-lg-4">
+
                     <label for="validationCustom02" class="form-label"
                       >Prioridad</label
                     >
@@ -98,7 +103,8 @@ if(isset($_POST['editartarea'])){
                       Please select a valid state.
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-12 col-md-6 col-lg-4">
+
                     <label for="validationCustom03" class="form-label"
                       >Estado</label
                     >
