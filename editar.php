@@ -33,8 +33,15 @@ if(isset($_POST['editartarea'])){
     $query->bindParam(':prioridad',$prioridad);
     $query->bindParam(':estado',$estado);
     $query->bindParam(':id',$id);
-    $query->execute();
+    if($query->execute()){
+      session_start();
+      $_SESSION['title'] = 'Tarea editada!';
+      $_SESSION['icon'] = 'info';
+    }
+    
+    
     header("Location:index.php");
+
 
 }
 ?>
