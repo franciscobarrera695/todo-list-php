@@ -54,9 +54,6 @@
               showConfirmButton: false,
               timer: 1500
               })
-              setTimeout(() => {
-                window.location.href= 'http://localhost/php/pruebas/index.php';
-              }, 1500);
             </script>
 
           <?php } ?>

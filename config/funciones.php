@@ -18,6 +18,8 @@ if(isset($_POST['agregartarea'])){
             $query->bindParam(':prioridad',$prioridad);
              
             if($query->execute()){
+                         session_start();
+
                 $_SESSION['title'] = 'Tarea Enviada!';
                 $_SESSION['icon'] = 'success';
 
@@ -106,7 +108,6 @@ if(isset($_GET['id'])){
     $query->bindParam(':id',$id);
 
      if($query->execute()){
-        
          session_start();
                 $_SESSION['title'] = 'Tarea Eliminada!';
                 $_SESSION['icon'] = 'error';
